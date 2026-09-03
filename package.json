@@ -1,0 +1,28 @@
+{
+  "name": "aulaweb-02-09",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThalesRP44/AulaWeb-02-09.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ThalesRP44/AulaWeb-02-09/issues"
+  },
+  "homepage": "https://github.com/ThalesRP44/AulaWeb-02-09#readme",
+  "dependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.4.1",
+    "express": "^5.2.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^7.0.2"
+  }
+}
