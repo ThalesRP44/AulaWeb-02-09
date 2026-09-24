@@ -13,7 +13,7 @@ class App {
     }
 
     private middleware(): void {
-        this.server.use(cors());
+        this.server.use(cors()); //biblioteca para filtrar de onde vem as request
         this.server.use(express.json());
         this.server.use(express.urlencoded({extended: true}));
     }
