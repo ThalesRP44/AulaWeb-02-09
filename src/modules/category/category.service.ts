@@ -22,7 +22,21 @@ import type {
 class CategoryService {
 
     public async create(data:ICreateCategoryDTO){
-        const category = Category.create();
+        const category = Category.create({
+            name: data.name,
+            description: data.description ??"",
+            active: data.active ?? true,
+        });
+
+        return category;
+    }
+
+    public async findAll(){
+        return await Category.find();
+    }
+
+    public async findByIdService(id:string){
+        return await Category.findById(id);
     }
 
 }
