@@ -9,4 +9,8 @@ CategoryRoutes.get('/',CategoryController.findAll);
 
 CategoryRoutes.get('/:id',CategoryController.findById);
 
+CategoryRoutes.put('/:id', CategoryController.update);
+
+CategoryRoutes.delete('/:id', CategoryController.delete);
+
 export default CategoryRoutes;

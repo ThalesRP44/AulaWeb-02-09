@@ -39,6 +39,17 @@ class CategoryService {
         return await Category.findById(id);
     }
 
+    public async update(id:string, data:IUptadeCategoryDTO){
+        return await Category.findByIdAndUpdate(id,data, {
+            returnDocument: 'after',
+            runValidators: true,
+        });
+    }
+
+    public async delete(id:string){
+        return await Category.findByIdAndUpdate(id);
+    }
+
 }
 
 export default new CategoryService;

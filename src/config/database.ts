@@ -4,7 +4,7 @@ class Database{
     public async connect():Promise<void>{
         try {
             await mongoose.connect(process.env.MONGO_URI as string);
-            console.log("MongoDB cenectado com secesso¹");
+            console.log("MongoDB cenectado com secesso!");
         } catch(error){
             console.log("erro ao conectar ao MongoDB: ", error);
             process.exit();
